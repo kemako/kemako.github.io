@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family: 'arial', sans-serif, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic' ;
   color: #333;
   font-size: 15px;
   line-height: 1.8;
@@ -242,12 +242,12 @@ ul, li {
 }
 
 #works .card-caption-title {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 #works .card-caption-detail {
-  font-size: 10px;
+  font-size: 12px;
 }
 #works .card-caption-info {
   font-size: 12px;
