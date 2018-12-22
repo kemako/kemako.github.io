@@ -1,4 +1,109 @@
 /* CSS Document */
+/* scroll animation */
+.sa {
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+.sa--lr {
+  transform: translate(-100px, 0);
+}
+
+.sa--rl {
+  transform: translate(100px, 0);
+}
+
+.sa--down {
+  transform: translate(0, -100px);
+}
+
+.sa--up {
+  transform: translate(0, 100px);
+}
+
+.sa--scaleUp {
+  transform: scale(.5);
+}
+
+.sa--scaleDown {
+  transform: scale(1.5);
+}
+
+.sa--rotateL {
+  transform: rotate(180deg);
+}
+
+.sa--rotateR {
+  transform: rotate(-180deg);
+}
+
+.ml1 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 0 0;
+}
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml16 {
+  /* color: #402d2d; */
+  /* padding: 40px 0; */
+  /* font-weight: 800; */
+  /* font-size: 2em; */
+  /* text-transform: uppercase; */
+  /* letter-spacing: 0.5em; */
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -76,7 +181,7 @@ ul, li {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  height: 380px;
+  height: 700px;
 }
 
 #header .logo {
@@ -88,17 +193,17 @@ ul, li {
   font-family: 'Yesteryear', cursive;
   display: block;
   position: relative;
-  top: -8px;
-  left: -60px;
-  font-size: 36px;
+  top: -28px;
+  left: -80px;
+  font-size: 48px;
   color: #d59fea;
-  -webkit-transform: rotate(-10deg);
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 
 #header .logo-title {
   font-family: 'Oswald', sans-serif;
-  font-size: 94px;
+  font-size: 150px;
   color: #ff6083;
   line-height: 1;
   letter-spacing: -2px;
@@ -106,7 +211,7 @@ ul, li {
 
 #header .logo-desc {
   display: block;
-  font-size: 16px;
+  font-size: 26px;
   text-align: center;
   margin-top: 5px;
 }
@@ -594,26 +699,3 @@ ul, li {
     padding: 0 10px;
     margin-bottom: 5px;
   }
-
-/* scroll animation */
-.sa {
-  opacity: 0;
-  transition: all .5s ease;
-}
-
-.sa.show {
-  opacity: 1;
-  transform: none;
-}
-
-.sa--lr {
-  transform: translate(-100px, 0);
-}
-
-.sa--rl {
-  transform: translate(100px, 0);
-}
-
-.sa--down {
-  transform: translate(0, -100px);
-}
