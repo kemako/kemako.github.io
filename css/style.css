@@ -184,6 +184,11 @@ ul, li {
   height: 700px;
 }
 
+#world {
+  width: 800px;
+  height: 250px;
+}
+
 #header .logo {
   display: block;
 }
@@ -193,8 +198,8 @@ ul, li {
   font-family: 'Yesteryear', cursive;
   display: block;
   position: relative;
-  top: -28px;
-  left: -80px;
+  top: -90px;
+  left: 450px;
   font-size: 48px;
   color: #d59fea;
   -webkit-transform: rotate(-15deg);
@@ -203,7 +208,7 @@ ul, li {
 
 #header .logo-title {
   font-family: 'Oswald', sans-serif;
-  font-size: 150px;
+  font-size: 130px;
   color: #ff6083;
   line-height: 1;
   letter-spacing: -2px;
@@ -211,6 +216,7 @@ ul, li {
 
 #header .logo-desc {
   display: block;
+  color: dimgray;
   font-size: 26px;
   text-align: center;
   margin-top: 5px;
