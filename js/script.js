@@ -147,6 +147,7 @@ anime.timeline({loop: false})
   window.addEventListener('load', scrollAnimationFunc);
   window.addEventListener('scroll', scrollAnimationFunc);
 
+  //物理演算
   var Engine = Matter.Engine,
       Render = Matter.Render,
       Runner = Matter.Runner,
@@ -157,30 +158,16 @@ anime.timeline({loop: false})
 
     let drawing = document.createElement("canvas");
 
-    // drawing.width = '1200'
-    // drawing.height = '350'
-
     drawing.width = width;
     drawing.height = height;
 
     let ctx = drawing.getContext("2d");
 
-    // ctx.fillStyle = "#f3f3f3";
-    // ctx.fillStyle = "blue";
-    // ctx.fillRect(0, 0, 150, 150);
-    ctx.beginPath();
-    // ctx.arc(140, 140, 140, 0, Math.PI * 2, true);
-    // ctx.rect(140, 140, 100, 10);
-    ctx.closePath();
     ctx.fill();
-    // ctx.fillStyle = "#ff6083";
     ctx.fillStyle = color;
-    // ctx.font = "200pt Impact";
     ctx.font = fontStyle;
     ctx.textAlign = "center";
-    // ctx.fillText($string, 650, 250);
     ctx.fillText($string, textWidth, textHeight);
-    // ctx.strokeText("Canvas Rocks!", 5, 130);
 
     return drawing.toDataURL("image/png");
   }
@@ -238,20 +225,18 @@ anime.timeline({loop: false})
     isStatic: true
   });
 
-  // var portfolio = document.getElementById('portfolio');
-
-  World.add(world, [  //作成した図形をステージに追加して描画する？
-      portfolio,
-      circle1,
-      circle2,
-      circle3,
-      name,
-      ground
-      // portfolio
-  ]);
-  Render.run(render);  //ステージを配置させる記述？
-
-  // create runner
-  var runner = Runner.create();
-  Runner.run(runner, engine);  //物理エンジンを実行？
+  // World.add(world, [  //作成した図形をステージに追加して描画する？
+  //     portfolio,
+  //     circle1,
+  //     circle2,
+  //     circle3,
+  //     name,
+  //     ground
+  //     // portfolio
+  // ]);
+  // Render.run(render);  //ステージを配置させる記述？
+  //
+  // // create runner
+  // var runner = Runner.create();
+  // Runner.run(runner, engine);  //物理エンジンを実行？
 });
