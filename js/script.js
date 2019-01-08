@@ -239,4 +239,19 @@ anime.timeline({loop: false})
   // // create runner
   // var runner = Runner.create();
   // Runner.run(runner, engine);  //物理エンジンを実行？
+
+  new Chart(document.getElementById("myChart"), {
+    type: "doughnut",
+    data: {
+      labels: ["Robot", "IoT", "Design", "Computer Vision","Web"],
+      datasets: [
+        {
+          data: [10, 6, 5, 3,3],
+          backgroundColor: [
+            'cornflowerblue', 'lightseagreen', 'hotpink', 'sandybrown', 'indianred'
+          ]
+        }
+      ]
+    }
+  });
 });
