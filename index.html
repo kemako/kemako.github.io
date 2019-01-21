@@ -19,8 +19,10 @@
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/user.png" />
   <link href="https://fonts.googleapis.com/css?family=Aleo|Sawarabi+Gothic|Sawarabi+Mincho" rel="stylesheet">
-  <script src="js/matter.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 </head>
 
 <body>
@@ -55,24 +57,85 @@
             <h2 class="section-title sa sa--down">ABOUT</h2>
           </div>
           <div class="two-column-wrapper">
-            <div class="two-column-image">
-              <img class="sa sa--lr" data-sa_delay="200" src="img/profile/ZEPETO_CAPTURE.PNG" alt="">
+            <div class="two-column-image sa sa--lr">
+              <img data-sa_delay="200" src="img/profile/ZEPETO_CAPTURE.PNG" alt="">
+              <p class="text">
+                <p class="emp" style="text-align: center">Mako Miyatake<br>宮武茉子</p>
+              </p>
             </div>
             <div class="two-column-desc sa sa--rl" data-sa_delay="400">
-              <p class="text">
-                <p class="emp">Mako Miyatake 宮武茉子</p>
-                <ul>
-                  <li>2016年4月 : 東京大学理科I類入学
-                  <li>2017年9月 : 東京大学工学部電子情報工学科進学</li>
-                  <li>2016年4月~2018年3月 : 東大のロボコンサークルにてロボットの設計・加工・組立を担当</li>
-                  <li>2017年1月~2018年4月 : 株式会社FiNCにてエンジニアインターン(Ruby on Railsを用いたWebアプリケーションを製作)</li>
-                  <li>2017年10月~2018年6月 : Tea Time Tech Lab.の運営を担当
-                  <li>2018年5月~現在 : 株式会社コネクテッドロボティクスにてエンジニアインターン(朝食ロボットプロジェクトのリーダーを担当)</li>
-                </ul>
-              </p>
+
+        <ul class="cbp_tmtimeline">
+        	<li>
+        		<span class="emp2">2016/04  <i class="fas fa-pencil-alt"></i></span>
+        		<div class="cbp_tmlabel">
+        			<h2>　　東京大学理科I類入学</h2>
+        			<p>　　Entered into the University of Tokyo</p>
+        		</div>
+        	</li>
+        	<li>
+        		<span class="emp2">2016/05   <i class="fas fa-robot"></i></span>
+        		<div class="cbp_tmlabel">
+        			<h2>　　東大ロボコンサークル入部</h2>
+        			<p>　　Joined a robotics club in the university</p>
+        		</div>
+        	</li>
+        	<li>
+        		<span class="emp2">2017/01   <i class="fas fa-laptop"></i></span>
+        		<div class="cbp_tmlabel">
+        			<h2>　　株式会社FiNCにてエンジニアインターン開始</h2>
+        			<p>　　Started an internship in FiNC Technologies Inc.</p>
+        		</div>
+        	</li>
+        	<li>
+        		<span class="emp2">2017/09   <i class="far fa-lightbulb"></i></span>
+        		<div class="cbp_tmlabel">
+        			<h2>　　東大工学部電子情報工学科進学</h2>
+        			<p>　　Entered into the department of Information and Communication Engineering</p>
+        		</div>
+        	</li>
+        	<li>
+        		<span class="emp2">2018/03   <i class="fas fa-robot"></i></span>
+        		<div class="cbp_tmlabel">
+        			<h2>　　東大ロボコンサークル退部</h2>
+        			<p>　　Retired the robotics club</p>
+        		</div>
+        	</li>
+        	<li>
+        		<span class="emp2">2018/04   <i class="fas fa-laptop"></i></span>
+        		<div class="cbp_tmlabel">
+              <h2>　　株式会社FiNCインターン終了</h2>
+        			<p>　　Retired an internship in FiNC Technologies Inc.</p>
+        		</div>
+        	</li>
+        	<li>
+        		<span class="emp2">2018/05   <i class="fas fa-robot"></i></span>
+        		<div class="cbp_tmlabel">
+              <h2>　　コネクテッドロボティクス株式会社にてエンジニアインターン開始</h2>
+        			<p>　　Started an internship in Connected Robotics Inc.</p>
+        		</div>
+        	</li>
+        	<li>
+        		<span class="emp2">2018/06   <i class="fas fa-female"></i></span>
+        		<div class="cbp_tmlabel">
+              <h2>　　Tea Time Tech Lab.開催</h2>
+        			<p>　　Held Tea Time Tech Lab.</p>
+        		</div>
+        	</li>
+        	<li>
+        		<span class="emp2">2018/09   <i class="fas fa-trophy"></i></span>
+        		<div class="cbp_tmlabel">
+              <h2>　　Todai To TexasにてDemo Day Award受賞</h2>
+        			<p>　　Won a prize in Todai To Texas</p>
+        		</div>
+        	</li>
+        </ul>
             </div>
           </div>
         </div>
+
+
+
       </section>
       <section class="section" id="likes">
         <div class="inner">
@@ -112,8 +175,8 @@
             <div class="two-column-image">
               <img class="sa sa--lr" data-sa_delay="200" src="img/latestworks/TTT.jpg" alt="">
             </div>
-            <div class="two-column-desc">
-              <p class="text sa sa--rl" data-sa_delay="400">
+            <div class="two-column-desc sa sa--rl">
+              <p class="text" data-sa_delay="400">
                 <p class="emp">The Breakfast Machine "Loraine"</p>
                 <p>Leader / Design / ROS <br>
                 <br> 「できたての朝食のいい香りで幸せに目覚める」ために、<br>ロボットが自動で朝食を作ってくれるシステムを製作中。<br>
@@ -219,13 +282,31 @@
         <div class="inner">
           <div class="section-title-block">
             <h2 class="section-title sa sa--down">Articles</h2>
-            <ul class="sa sa--scaleUp">
+              <div class="swiper-container sa sa--scaleUp">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><a href="https://emira-t.jp/rikei/6573/" target="_blank">朝食ロボットを作り始めたきっかけ<img src="img/articles/emira1.png"></a></div>
+                    <div class="swiper-slide"><a href="http://todai-umeet.com/article/34801/" target="_blank">Tea Time Tech Lab.での活動<img src="img/articles/tttl.png"></a></div>
+                    <div class="swiper-slide"><a href="https://www.wantedly.com/companies/finc/post_articles/72635" target="_blank">FiNCでのインターン<img src="img/articles/finc.png"></a></div>
+                    <div class="swiper-slide"><a href="https://emira-t.jp/rikei/6587/" target="_blank">ロボコンでの経験<img src="img/articles/emira2.png"></a></div>
+                    <div class="swiper-slide"><a href="https://www.wantedly.com/companies/connectedrobotics/post_articles/139619" target="_blank">Todai To Texasについて<img src="img/articles/ttt.png"></a></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+            <!-- <ul class="sa sa--scaleUp">
               <li><a href="https://www.wantedly.com/companies/finc/post_articles/72635" target="_blank"> FiNCでのエンジニアインターンについて</a> </li>
               <li><a href="https://emira-t.jp/rikei/6573/" target="_blank"> 朝食ロボットを作り始めたきっかけ</a> </li>
               <li><a href="https://emira-t.jp/rikei/6587/" target="_blank"> 自分自身について</a> </li>
               <li><a href="http://todai-umeet.com/article/34801/" target="_blank"> Tea Time Tech Lab.での活動について </a></li>
               <li><a href="https://www.wantedly.com/companies/connectedrobotics/post_articles/139619" target="_blank"> Connected Roboticsでの活動 </a></li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </section>

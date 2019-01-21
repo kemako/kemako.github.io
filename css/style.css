@@ -116,7 +116,7 @@
 body {
   /* font-family: 'arial', sans-serif, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic' ; */
   font-family: 'Sawarabi Mincho', sans-serif;
-  color: #333;
+  color: #1a1a1a;
   font-size: 15px;
   line-height: 1.8;
   letter-spacing: 0.8px;
@@ -334,6 +334,12 @@ ul, li {
   font-family: 'Sawarabi Mincho', sans-serif;
   color: palevioletred;
   font-size: 26px;
+  letter-spacing: 0.8px;
+}
+.emp2 {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: dimgray;
+  font-size: 22px;
   letter-spacing: 0.8px;
 }
 /*--------------------------------

@@ -147,99 +147,6 @@ anime.timeline({loop: false})
   window.addEventListener('load', scrollAnimationFunc);
   window.addEventListener('scroll', scrollAnimationFunc);
 
-  //物理演算
-  var Engine = Matter.Engine,
-      Render = Matter.Render,
-      Runner = Matter.Runner,
-      World = Matter.World,
-      Bodies = Matter.Bodies;
-
-  function createString($string, width, height, textWidth, textHeight, fontStyle, color) {
-
-    let drawing = document.createElement("canvas");
-
-    drawing.width = width;
-    drawing.height = height;
-
-    let ctx = drawing.getContext("2d");
-
-    ctx.fill();
-    ctx.fillStyle = color;
-    ctx.font = fontStyle;
-    ctx.textAlign = "center";
-    ctx.fillText($string, textWidth, textHeight);
-
-    return drawing.toDataURL("image/png");
-  }
-
-  var container = document.getElementById('world')
-
-  // create engine
-  var engine = Engine.create(),  //物理演算エンジンを生成？
-      world = engine.world;  //重力の存在する仮想世界の生成…？
-
-  var render = Render.create({  //レンダリングの設定？
-      element: container,
-      engine: engine,
-      options: {
-        width: 800,  //ステージの横幅
-        height: 250,  //ステージの高さ
-        background: '#f3f3f3',  //ステージの背景色
-        wireframes: false  //ワイヤーフレームモードをオフ
-      }
-  });
-
-  //四角のオブジェクト作成
-  var portfolio = Bodies.rectangle(500, 100, 600, 120, {
-    restitution: 0.3,
-    render: {
-      sprite: {
-        texture: createString("PORTFOLIO",'1250', '220', 600, 160, "100pt Impact", "#ff6083")
-      }
-    }
-  });
-
-  var name = Bodies.rectangle(200, 20, 180, 33, {
-    restitution: 0.3,
-    render: {
-      sprite: {
-        texture: createString("Mako Miyatake",'600', '150', 300, 80, "20pt fantasy", "dimgray")
-      }
-    }
-  });
-  //円のオブジェクト作成
-  // create renderer
-  var circle1 = Bodies.circle(400, 0, 30, {
-    restitution: 0.5
-  });
-
-  var circle2 = Bodies.circle(80, 0, 20, {
-    restitution: 0.5
-  });
-
-  var circle3 = Bodies.circle(360, 10, 25, {
-    restitution: 0.5
-  });
-  //床
-  var ground = Bodies.rectangle(400,250,800,1, {
-    isStatic: true
-  });
-
-  // World.add(world, [  //作成した図形をステージに追加して描画する？
-  //     portfolio,
-  //     circle1,
-  //     circle2,
-  //     circle3,
-  //     name,
-  //     ground
-  //     // portfolio
-  // ]);
-  // Render.run(render);  //ステージを配置させる記述？
-  //
-  // // create runner
-  // var runner = Runner.create();
-  // Runner.run(runner, engine);  //物理エンジンを実行？
-
   new Chart(document.getElementById("myChart"), {
     type: "doughnut",
     data: {
@@ -254,4 +161,21 @@ anime.timeline({loop: false})
       ]
     }
   });
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    slidesPerView: 4,
+    // autoplay: 2000,
+    speed: 500,
+    spaceBetween: 10,
+    centeredSlides : true,
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    breakpoints: {
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 0
+      }
+    }
+  })
 });
