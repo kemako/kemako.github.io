@@ -114,7 +114,8 @@
 }
 
 body {
-  font-family: 'arial', sans-serif, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic' ;
+  /* font-family: 'arial', sans-serif, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic' ; */
+  font-family: 'Sawarabi Mincho', sans-serif;
   color: #333;
   font-size: 15px;
   line-height: 1.8;
@@ -202,22 +203,25 @@ ul, li {
   top: -90px;
   left: 450px;
   font-size: 48px;
-  color: #d59fea;
+  /* color: #ff6083; */
+  color: palevioletred;
   -webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
 
 #header .logo-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Aleo', serif;
+  /* font-family: 'Oswald', sans-serif; */
   font-size: 130px;
-  color: #ff6083;
+  color: #333333;
   line-height: 1;
   letter-spacing: -2px;
 }
 
 #header .logo-desc {
+  font-family: 'Yesteryear', cursive;
   display: block;
-  color: dimgray;
+  color: palevioletred;
   font-size: 26px;
   text-align: center;
   margin-top: 5px;
@@ -229,7 +233,8 @@ ul, li {
 
 #gnav {
   padding: 10px;
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Aleo', serif;
+  /* font-family: 'Open sans', sans-serif; */
   z-index: 100;
 }
 
@@ -285,13 +290,14 @@ ul, li {
 }
 
 .section .section-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Aleo', serif;
   letter-spacing: -0.01em;
   display: inline-block;
   font-size: 56px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #ff6083;
+  /* color: #ff6083; */
+  color: #333333;
 }
 
 .section .section-desc {
@@ -324,6 +330,12 @@ ul, li {
   width: 62%;
 }
 
+.emp {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: palevioletred;
+  font-size: 26px;
+  letter-spacing: 0.8px;
+}
 /*--------------------------------
 　Latestworks
 ---------------------------------*/
@@ -624,6 +636,19 @@ ul, li {
   }
 
   #latestworks .two-column-desc {
+    width: 100%;
+  }
+  #interests .two-column-wrapper {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  #interests .two-column-image {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  #interests .two-column-desc {
     width: 100%;
   }
   #works .card {
