@@ -335,13 +335,13 @@ ul, li {
 .emp {
   font-family: 'Sawarabi Mincho', sans-serif;
   color: palevioletred;
-  font-size: 26px;
+  font-size: 20px;
   letter-spacing: 0.8px;
 }
 .emp2 {
   font-family: 'Sawarabi Mincho', sans-serif;
   color: dimgray;
-  font-size: 22px;
+  font-size: 12px;
   letter-spacing: 0.8px;
 }
 /*--------------------------------
@@ -604,7 +604,7 @@ ul, li {
     height: 200px;
   }
   #header .logo-title {
-    font-size: 56px;
+    font-size: 50px;
   }
   #header .logo-name {
     top: 0;
