@@ -114,9 +114,10 @@
 }
 
 body {
+  font-family: "HiraginoSans-W1","Hiragino Sans","ヒラギノ角ゴシック";
   /* font-family: 'arial', sans-serif, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic' ; */
   /* font-family: , sans-serif; */
-  font-family: 'Sawarabi Mincho', serif;
+  /* font-family: 'Sawarabi Mincho', serif; */
   color: #1a1a1a;
   font-size: 15px;
   line-height: 1.8;
@@ -157,7 +158,7 @@ ul, li {
 ---------------------------------*/
 
 #wrapper {
-  background-color: #f3f3f3;
+  background-color: white;
 }
 
 .inner {
@@ -252,7 +253,7 @@ ul, li {
 }
 
 #gnav li {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 18px;
   padding: 0 20px;
 }
@@ -271,7 +272,7 @@ ul, li {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #f3f3f3;
+  background-color: white;
   box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
@@ -333,13 +334,15 @@ ul, li {
 }
 
 .emp {
-  font-family: 'Sawarabi Mincho', sans-serif;
+  /* font-family: 'Sawarabi Mincho', sans-serif; */
+  font-family: "HiraginoSans-W1","Hiragino Sans","ヒラギノ角ゴシック";
   color: palevioletred;
   font-size: 20px;
   letter-spacing: 0.8px;
 }
 .emp2 {
-  font-family: 'Sawarabi Mincho', sans-serif;
+  /* font-family: 'Sawarabi Mincho', sans-serif; */
+  font-family: "HiraginoSans-W1","Hiragino Sans","ヒラギノ角ゴシック";
   color: dimgray;
   font-size: 12px;
   letter-spacing: 0.8px;
@@ -375,7 +378,7 @@ ul, li {
 
 #works .card-caption-title {
   font-size: 15px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 #works .card-caption-detail {
@@ -462,6 +465,8 @@ ul, li {
 
 #skill .skill-desc-title {
   margin-bottom: 3px;
+  font-family: "HiraginoSans-W0","Hiragino Sans","ヒラギノ角ゴシック";
+  font-weight: 500;
 }
 
 #skill .rate {
@@ -549,7 +554,7 @@ ul, li {
 }
 
 #contact .contact-list-desc {
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /*--------------------------------
@@ -583,7 +588,7 @@ ul, li {
 
 #footer .footer-link li a {
   color: #fff;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 #footer .copyright {
