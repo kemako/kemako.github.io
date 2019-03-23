@@ -147,20 +147,6 @@ anime.timeline({loop: false})
   window.addEventListener('load', scrollAnimationFunc);
   window.addEventListener('scroll', scrollAnimationFunc);
 
-  new Chart(document.getElementById("myChart"), {
-    type: "doughnut",
-    data: {
-      labels: ["Robot", "IoT", "Design", "Computer Vision","Web"],
-      datasets: [
-        {
-          data: [10, 6, 5, 3,3],
-          backgroundColor: [
-            'cornflowerblue', 'lightseagreen', 'hotpink', 'sandybrown', 'indianred'
-          ]
-        }
-      ]
-    }
-  });
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     slidesPerView: 4,
@@ -178,4 +164,19 @@ anime.timeline({loop: false})
       }
     }
   })
+
+  new Chart(document.getElementById("myChart"), {
+    type: "doughnut",
+    data: {
+      labels: ["Robot", "IoT", "Design", "Computer Vision","Web"],
+      datasets: [
+        {
+          data: [10, 6, 5, 3,3],
+          backgroundColor: [
+            'cornflowerblue', 'lightseagreen', 'hotpink', 'sandybrown', 'indianred'
+          ]
+        }
+      ]
+    }
+  });
 });
