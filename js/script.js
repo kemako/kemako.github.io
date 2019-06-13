@@ -1,4 +1,5 @@
 // PhotoSwipe
+window.location = "https://www.makomiyatake.com/";
 initPhotoSwipeFromDOM('.my-gallery');
 
 $(function() {
